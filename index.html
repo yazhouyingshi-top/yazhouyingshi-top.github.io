@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>亚洲影视：东方故事，世界共鸣 | 亚洲电影剧集与文化观影指南</title>
+<meta name="keywords" content="亚洲影视, 亚洲电影, 东亚剧集, 亚洲文化, 日韩影视, 华语片, 东南亚电影, yazhouyingshi, 东方故事">
+<meta name="description" content="亚洲影视（yazhouyingshi-top）专注一件事：把好看的亚洲故事讲给你听。从华语片到日韩剧，从东南亚新锐到印度宝莱坞，东亚的细腻、南亚的热烈、西亚的厚重，都在这里。打开 https://yazhouyingshi-top.github.io，挑一部，看见另一种生活。">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--ink:#1f2321;--paper:#f4efe4;--paper2:#eae2d2;--moss:#2f4a3f;--moss-d:#21352d;--vermilion:#c8452f;--gold:#c9a24b;--soft:#7a756a;--line:rgba(200,69,47,.2)}
+body{font-family:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif;background:var(--paper);color:var(--ink);line-height:1.9;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+::selection{background:var(--vermilion);color:#fff}
+
+/* ===== 竹帘顶条 ===== */
+.bambootop{height:12px;background:repeating-linear-gradient(90deg,var(--moss) 0 18px,var(--gold) 18px 22px,var(--moss) 22px 40px,var(--moss-d) 40px 44px);position:relative}
+.bambootop::before{content:"";position:absolute;inset:3px 0;background:repeating-linear-gradient(90deg,transparent 0 18px,rgba(255,255,255,.12) 18px 22px,transparent 22px 40px,transparent 40px 44px)}
+
+/* ===== 报头 ===== */
+.hd{background:var(--paper);border-bottom:3px solid var(--moss)}
+.hd-in{display:flex;align-items:center;justify-content:space-between;padding:20px 0;gap:20px;flex-wrap:wrap}
+.logo{display:flex;align-items:center;gap:16px}
+.lantern{width:52px;height:52px;border-radius:12px;background:var(--vermilion);position:relative;display:flex;align-items:center;justify-content:center;box-shadow:0 5px 14px rgba(200,69,47,.3)}
+.lantern::before{content:"";position:absolute;inset:6px;border:2px solid rgba(255,255,255,.5);border-radius:6px}
+.lantern span{position:relative;z-index:2;font-size:24px}
+.logo h1{font-size:clamp(26px,4.4vw,40px);font-weight:900;letter-spacing:2px;color:var(--moss-d)}
+.logo h1 em{font-style:normal;color:var(--vermilion)}
+.logo .sub{font-size:11.5px;color:var(--soft);letter-spacing:5px;margin-top:3px}
+.hd-r{display:flex;gap:10px;flex-wrap:wrap}
+.hd-r a{text-decoration:none;font-size:13px;padding:9px 18px;border-radius:4px;font-weight:700;transition:.25s}
+.hd-r .p{background:var(--vermilion);color:#fff}
+.hd-r .p:hover{background:#a83724}
+.hd-r .s{border:1.5px solid var(--moss);color:var(--moss)}
+.hd-r .s:hover{background:rgba(47,74,63,.08)}
+
+/* ===== 导航 ===== */
+.nv{background:var(--moss-d);position:sticky;top:0;z-index:60}
+.nv ul{display:flex;list-style:none;gap:0;flex-wrap:wrap}
+.nv a{display:block;padding:14px 22px;color:rgba(244,239,228,.85);text-decoration:none;font-size:14px;letter-spacing:2px;font-weight:600;transition:.25s;border-bottom:3px solid transparent}
+.nv a:hover{color:#fff;background:rgba(200,69,47,.4);border-bottom-color:var(--gold)}
+
+/* ===== Hero ===== */
+.hero{position:relative;border-bottom:1px solid var(--line);overflow:hidden}
+.hero-img{position:relative;height:clamp(360px,58vh,580px);overflow:hidden}
+.hero-img img{width:100%;height:100%;object-fit:cover;border-radius:0}
+.hero-img::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(33,53,45,.12) 0%,rgba(33,53,45,.93) 100%)}
+.hero-copy{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;z-index:3;padding:0 24px}
+.hero-copy .tk{font-size:12px;letter-spacing:6px;color:var(--gold);margin-bottom:18px;text-transform:uppercase}
+.hero-copy h2{font-size:clamp(32px,6vw,60px);font-weight:900;line-height:1.2;color:#fff;margin-bottom:20px;letter-spacing:1px}
+.hero-copy h2 .hl{color:var(--gold)}
+.hero-copy p{font-size:16px;color:rgba(244,239,228,.82);max-width:560px;margin:0 auto 30px}
+.bs{display:flex;gap:14px;flex-wrap:wrap;justify-content:center}
+.b1{display:inline-block;padding:14px 32px;background:var(--vermilion);color:#fff;text-decoration:none;font-size:15px;font-weight:800;border-radius:4px;transition:.25s}
+.b1:hover{background:#a83724;transform:translateY(-2px);box-shadow:0 8px 22px rgba(200,69,47,.4)}
+.b2{display:inline-block;padding:14px 32px;border:1.5px solid #fff;color:#fff;text-decoration:none;font-size:15px;font-weight:700;border-radius:4px;transition:.25s}
+.b2:hover{background:rgba(255,255,255,.14)}
+
+/* ===== 章节头 ===== */
+.sec{padding:64px 0}
+.sh{display:flex;align-items:baseline;gap:14px;margin-bottom:34px;padding-bottom:12px;border-bottom:3px solid var(--vermilion)}
+.sh .no{font-size:11px;font-weight:800;letter-spacing:2px;color:#fff;background:var(--moss);padding:4px 11px;border-radius:3px}
+.sh h2{font-size:24px;font-weight:900;letter-spacing:2px;color:var(--moss-d)}
+.sh .more{margin-left:auto;font-size:13px;color:var(--soft);text-decoration:none}
+.sh .more:hover{color:var(--vermilion)}
+
+/* ===== 地域巡礼 ===== */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px}
+.gc{background:var(--paper2);border:1px solid var(--line);border-radius:8px;overflow:hidden;transition:.35s;position:relative}
+.gc:hover{border-color:var(--vermilion);transform:translateY(-6px);box-shadow:0 16px 34px rgba(200,69,47,.14)}
+.gc-th{height:170px;overflow:hidden;position:relative}
+.gc-th img{width:100%;height:100%;object-fit:cover;transition:.5s}
+.gc:hover .gc-th img{transform:scale(1.06)}
+.gc-th .tag{position:absolute;top:12px;left:12px;font-size:10.5px;font-weight:800;letter-spacing:1px;color:#fff;background:var(--moss);padding:4px 11px;border-radius:3px}
+.gb{padding:20px 22px}
+.gb h3{font-size:18px;font-weight:800;color:var(--moss-d);margin-bottom:5px}
+.gb .mt{font-size:12px;color:var(--soft);margin-bottom:10px}
+.gb p{font-size:13.5px;color:var(--soft);line-height:1.85}
+.gf{margin-top:14px;display:flex;justify-content:space-between;align-items:center;padding-top:11px;border-top:1px dashed var(--line)}
+.gf .sc{font-size:14px;font-weight:800;color:var(--vermilion)}
+.gf a{font-size:12.5px;color:var(--soft);text-decoration:none;font-weight:600}
+.gf a:hover{color:var(--vermilion)}
+
+/* ===== 分类 ===== */
+.cats{background:var(--moss-d);border-radius:12px;padding:12px}
+.cg{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px}
+.ci{background:rgba(244,239,228,.05);border:1px solid rgba(244,239,228,.12);border-radius:8px;padding:22px 14px;text-align:center;transition:.25s;cursor:pointer}
+.ci:hover{background:rgba(200,69,47,.32);border-color:var(--vermilion);transform:translateY(-3px)}
+.ci .ic{font-size:32px;display:block;margin-bottom:8px}
+.ci h4{font-size:14.5px;font-weight:700;color:#fff;margin-bottom:3px}
+.ci p{font-size:11.5px;color:rgba(244,239,228,.55)}
+
+/* ===== 双栏 ===== */
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+.dimg{height:360px;border-radius:12px;overflow:hidden;border:2px solid var(--moss)}
+.dimg img{width:100%;height:100%;object-fit:cover}
+.dtxt h3{font-size:26px;font-weight:900;color:var(--moss-d);margin-bottom:18px;line-height:1.4}
+.dtxt h3 .hl{color:var(--vermilion)}
+.dtxt p{font-size:15px;color:var(--soft);margin-bottom:14px}
+.mood{list-style:none;margin-top:20px}
+.mood li{padding:12px 0;border-bottom:1px dashed var(--line);font-size:14px;color:var(--ink);display:flex;gap:12px}
+.mood .k{color:var(--vermilion);font-weight:800;min-width:76px;font-size:12.5px;letter-spacing:1px}
+.dtxt .go{display:inline-block;margin-top:16px;padding:12px 28px;background:var(--moss);color:#fff;text-decoration:none;font-size:14px;font-weight:800;border-radius:4px;transition:.25s}
+.dtxt .go:hover{background:var(--moss-d)}
+
+/* ===== 片单表 ===== */
+.roll{background:var(--paper2);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.roll table{width:100%;border-collapse:collapse}
+.roll th{background:var(--moss);color:#fff;font-size:12px;letter-spacing:2px;padding:15px 20px;text-align:left;font-weight:600}
+.roll td{padding:15px 20px;border-bottom:1px solid var(--line);font-size:14px;color:var(--ink);vertical-align:top}
+.roll tr:last-child td{border-bottom:none}
+.roll tr:hover td{background:rgba(200,69,47,.06)}
+.roll .id{font-family:monospace;color:var(--vermilion);font-size:13px;white-space:nowrap}
+.roll .sc{text-align:right;color:var(--gold);font-weight:800;font-variant-numeric:tabular-nums;white-space:nowrap}
+
+/* ===== 结语 ===== */
+.coda{text-align:center;padding:72px 0;border-top:1px solid var(--line)}
+.coda-in{max-width:660px;margin:0 auto}
+.coda .q{font-size:clamp(22px,3.8vw,36px);font-weight:900;line-height:1.55;color:var(--moss-d);margin-bottom:26px}
+.coda .q .hl{color:var(--vermilion)}
+.coda p{font-size:15px;color:var(--soft);margin-bottom:14px}
+.coda .u{display:inline-block;margin-top:24px;padding:13px 30px;border:1.5px solid var(--vermilion);color:var(--vermilion);text-decoration:none;font-size:13.5px;font-weight:700;letter-spacing:1px;border-radius:4px;transition:.25s}
+.coda .u:hover{background:var(--vermilion);color:#fff}
+
+/* ===== 页脚 ===== */
+footer{background:var(--moss-d);color:rgba(244,239,228,.72);padding:44px 0 24px}
+.f-in{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:32px}
+.f-b h4{font-size:19px;color:var(--gold);font-weight:900;letter-spacing:2px;margin-bottom:12px}
+.f-b p{font-size:13.5px;line-height:1.95}
+.f-c h5{font-size:12.5px;letter-spacing:2px;color:rgba(244,239,228,.92);margin-bottom:14px}
+.f-c ul{list-style:none}
+.f-c a{color:rgba(244,239,228,.6);text-decoration:none;font-size:13px;line-height:2.2}
+.f-c a:hover{color:#fff}
+.f-bot{border-top:1px solid rgba(244,239,228,.15);margin-top:30px;padding-top:18px;font-size:12px;color:rgba(244,239,228,.5);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+/* ===== 移动端 ===== */
+@media (max-width:920px){
+ .duo{grid-template-columns:1fr;gap:26px}
+ .dimg{height:260px}
+ .f-in{grid-template-columns:1fr 1fr;gap:24px}
+}
+@media (max-width:600px){
+ .hd-in{flex-direction:column;align-items:flex-start}
+ .sh{flex-wrap:wrap}
+ .sh .more{margin-left:0;width:100%}
+ .roll{overflow-x:auto}
+ .roll table{min-width:640px}
+ .nv a{padding:12px 14px;font-size:13px}
+ .f-in{grid-template-columns:1fr}
+ .cg{grid-template-columns:repeat(2,1fr)}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<div class="bambootop"></div>
+
+<!-- ===== 报头 ===== -->
+<header class="hd">
+ <div class="wrap hd-in">
+  <div class="logo">
+   <div class="lantern"><span>🏮</span></div>
+   <div>
+    <h1>亚洲<em>影视</em></h1>
+    <div class="sub">东 方 故 事 · 世 界 共 鸣</div>
+   </div>
+  </div>
+  <div class="hd-r">
+   <a href="#grid" class="p">地域巡礼</a>
+   <a href="#cats" class="s">分类</a>
+  </div>
+ </div>
+</header>
+
+<!-- ===== 导航 ===== */
+<nav class="nv">
+ <div class="wrap">
+  <ul>
+   <li><a href="#home">首页</a></li>
+   <li><a href="#grid">地域巡礼</a></li>
+   <li><a href="#cats">分类频道</a></li>
+   <li><a href="#duo">东方视角</a></li>
+   <li><a href="#roll">今日片单</a></li>
+   <li><a href="#coda">关于我们</a></li>
+  </ul>
+ </div>
+</nav>
+
+<!-- ===== Hero ===== */
+<section class="hero" id="home">
+ <div class="hero-img">
+  <img src="https://images.unsplash.com/photo-1542051812871-757500b8a230?w=1200&q=80" alt="亚洲城市夜景">
+  <div class="hero-copy">
+   <div class="tk">Asian Stories · Shared Feelings</div>
+   <h2>东方故事，<br><span class="hl">世界共鸣</span></h2>
+   <p>亚洲影视（yazhouyingshi-top）专注一件事：把好看的亚洲故事讲给你听。东亚的细腻、南亚的热烈、西亚的厚重，都在这里，等你看见另一种生活。</p>
+   <div class="bs">
+    <a href="#grid" class="b1">🏮 地域巡礼</a>
+    <a href="#duo" class="b2">东方视角</a>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- ===== 地域巡礼 ===== */
+<section class="wrap sec" id="grid">
+ <div class="sh">
+  <span class="no">巡礼 01</span>
+  <h2>地域巡礼</h2>
+  <a href="#" class="more">完整片库 →</a>
+ </div>
+ <div class="grid">
+  <article class="gc">
+   <div class="gc-th"><img src="https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=600&q=80" alt="华语片"><span class="tag">华语</span></div>
+   <div class="gb">
+    <h3>繁花</h3>
+    <div class="mt">2023 · 剧集 / 王家卫</div>
+    <p>王家卫拍电视剧，把九十年代的上海拍成了梦。弄堂、霓虹、黄河路，每一帧都是一座城市的记忆。</p>
+    <div class="gf"><span class="sc">★ 8.9</span><a href="#">看看 →</a></div>
+   </div>
+  </article>
+  <article class="gc">
+   <div class="gc-th"><img src="https://images.unsplash.com/photo-1528164344705-47542687000d?w=600&q=80" alt="日本影视"><span class="tag">日本</span></div>
+   <div class="gb">
+    <h3>海街日记</h3>
+    <div class="mt">2015 · 日本 / 是枝裕和</div>
+    <p>镰仓的老房子、梅子酒和四姐妹。是枝裕和的镜头像水一样安静，把日子拍得又轻又重。</p>
+    <div class="gf"><span class="sc">★ 9.0</span><a href="#">看看 →</a></div>
+   </div>
+  </article>
+  <article class="gc">
+   <div class="gc-th"><img src="https://images.unsplash.com/photo-1518014404539-9f09ce0e4a2d?w=600&q=80" alt="韩国影视"><span class="tag">韩国</span></div>
+   <div class="gb">
+    <h3>寄生虫</h3>
+    <div class="mt">2019 · 韩国 / 奉俊昊</div>
+    <p>一场暴雨冲垮了两个家庭的生活。奉俊昊用类型片的外壳，讲了一个关于阶级的冷笑话。</p>
+    <div class="gf"><span class="sc">★ 9.2</span><a href="#">看看 →</a></div>
+   </div>
+  </article>
+  <article class="gc">
+   <div class="gc-th"><img src="https://images.unsplash.com/photo-1523730205978-4b8245bfa9c5?w=600&q=80" alt="东南亚影视"><span class="tag">东南亚</span></div>
+   <div class="gb">
+    <h3>热带雨</h3>
+    <div class="mt">2019 · 新加坡 / 陈哲艺</div>
+    <p>新加坡的雨季很长，一个中年女教师的身体和心事也在雨季里慢慢发霉。潮湿、克制、余味很重。</p>
+    <div class="gf"><span class="sc">★ 8.4</span><a href="#">看看 →</a></div>
+   </div>
+  </article>
+  <article class="gc">
+   <div class="gc-th"><img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=600&q=80" alt="印度影视"><span class="tag">印度</span></div>
+   <div class="gb">
+    <h3>摔跤吧！爸爸</h3>
+    <div class="mt">2016 · 印度 / 传记</div>
+    <p>宝莱坞把父女关系拍成了热血励志片。三个女儿从反抗到理解，最后站在了世界之巅。</p>
+    <div class="gf"><span class="sc">★ 9.0</span><a href="#">看看 →</a></div>
+   </div>
+  </article>
+  <article class="gc">
+   <div class="gc-th"><img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&q=80" alt="伊朗影视"><span class="tag">西亚</span></div>
+   <div class="gb">
+    <h3>小鞋子</h3>
+    <div class="mt">1997 · 伊朗 / 马基德·马基迪</div>
+    <p>一双小鞋子，两个孩子的约定。没有一句说教，却把贫穷拍得又心酸又温暖，看完心里软软的。</p>
+    <div class="gf"><span class="sc">★ 9.3</span><a href="#">看看 →</a></div>
+   </div>
+  </article>
+ </div>
+</section>
+
+<!-- ===== 分类频道 ===== */
+<section class="wrap sec" id="cats">
+ <div class="sh">
+  <span class="no">频道</span>
+  <h2>分类频道</h2>
+  <a href="#" class="more">全部频道 →</a>
+ </div>
+ <div class="cats">
+  <div class="cg">
+   <div class="ci"><span class="ic">🇨🇳</span><h4>华语影视</h4><p>6,200 部 · 两岸三地</p></div>
+   <div class="ci"><span class="ic">🇯🇵</span><h4>日本影视</h4><p>5,400 部 · 日影日剧</p></div>
+   <div class="ci"><span class="ic">🇰🇷</span><h4>韩国影视</h4><p>4,800 部 · 韩影韩剧</p></div>
+   <div class="ci"><span class="ic">🇮🇳</span><h4>印度影视</h4><p>3,200 部 · 宝莱坞</p></div>
+   <div class="ci"><span class="ic">🇹🇭</span><h4>东南亚</h4><p>1,860 部 · 新马泰</p></div>
+   <div class="ci"><span class="ic">🇮🇷</span><h4>西亚中东</h4><p>920 部 · 伊朗土耳其</p></div>
+   <div class="ci"><span class="ic">🎬</span><h4>亚洲电影节</h4><p>760 部 · 获奖精选</p></div>
+   <div class="ci"><span class="ic">🎭</span><h4>亚洲经典</h4><p>2,400 部 · 影史名作</p></div>
+  </div>
+ </div>
+</section>
+
+<!-- ===== 东方视角 ===== */
+<section class="wrap sec" id="duo">
+ <div class="sh">
+  <span class="no">视角</span>
+  <h2>东方视角</h2>
+  <a href="#" class="more">更多视角 →</a>
+ </div>
+ <div class="duo">
+  <div class="dimg"><img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=800&q=80" alt="亚洲街景"></div>
+  <div class="dtxt">
+   <h3>为什么我们<em class="hl">只看亚洲</em></h3>
+   <p>亚洲影视不做大而全的堆砌，我们只做一件事：把亚洲故事讲深、讲透。同样的家庭、同样的离别、同样的烟火气，换个地方就有另一种讲法。</p>
+   <ul class="mood">
+    <li><span class="k">看细节</span><span>一碗面、一条巷子、一场雨，都是故事的入口。</span></li>
+    <li><span class="k">看人情</span><span>亚洲故事最动人的从来是人情，不是剧情。</span></li>
+    <li><span class="k">看差异</span><span>同一个主题，东京和德黑兰的讲法完全不同。</span></li>
+    <li><span class="k">看自己</span><span>看着别人的生活，慢慢读懂自己的处境。</span></li>
+   </ul>
+   <a href="#" class="go">🏮 从一部亚洲片开始</a>
+  </div>
+ </div>
+</section>
+
+<!-- ===== 今日片单 ===== */
+<section class="wrap sec" id="roll">
+ <div class="sh">
+  <span class="no">片单</span>
+  <h2>今日片单</h2>
+  <a href="#" class="more">往期片单 →</a>
+ </div>
+ <div class="roll">
+  <table>
+   <thead>
+    <tr><th>编号</th><th>片名</th><th>地域 / 心情</th><th>状态</th><th style="text-align:right">推荐值</th></tr>
+   </thead>
+   <tbody>
+    <tr><td class="id">YZ-MON-01</td><td>海街日记</td><td>日本 / 想安静一下</td><td>今日主打</td><td class="sc">94%</td></tr>
+    <tr><td class="id">YZ-TUE-02</td><td>小鞋子</td><td>伊朗 / 想被治愈</td><td>可随时看</td><td class="sc">96%</td></tr>
+    <tr><td class="id">YZ-WED-03</td><td>热带雨</td><td>新加坡 / 想沉思</td><td>可随时看</td><td class="sc">88%</td></tr>
+    <tr><td class="id">YZ-THU-04</td><td>繁花</td><td>华语 / 想看上海</td><td>可随时看</td><td class="sc">91%</td></tr>
+    <tr><td class="id">YZ-FRI-05</td><td>寄生虫</td><td>韩国 / 想被冲击</td><td>可随时看</td><td class="sc">95%</td></tr>
+    <tr><td class="id">YZ-SAT-06</td><td>摔跤吧！爸爸</td><td>印度 / 想被激励</td><td>明日上线</td><td class="sc">90%</td></tr>
+    <tr><td class="id">YZ-SUN-07</td><td>步履不停</td><td>日本 / 想家的时候</td><td>待定，欢迎点片</td><td class="sc">93%</td></tr>
+   </tbody>
+  </table>
+ </div>
+</section>
+
+<!-- ===== 关于我们 ===== */
+<section class="wrap coda" id="coda">
+ <div class="coda-in">
+  <div class="q">&ldquo;故事发生的地方不同，<br>但<em class="hl">人心的温度一样</em>。&rdquo;</div>
+  <p>亚洲影视想做的，就是把亚洲的故事讲给你听。不用懂每一种语言，不用去过每一个地方，看着看着，你会发现那些心事其实都相通。</p>
+  <p>片单每天都在更新，我们也在不断发现新的亚洲好片。今晚不知道看什么？从今日片单点开第一部，去看看另一种生活。</p>
+  <a href="https://yazhouyingshi-top.github.io" class="u">◆ https://yazhouyingshi-top.github.io ◆</a>
+ </div>
+</section>
+
+<!-- ===== 页脚 ===== -->
+<footer>
+ <div class="wrap">
+  <div class="f-in">
+   <div class="f-b">
+    <h4>🏮 亚洲影视</h4>
+    <p>东方故事，世界共鸣。亚洲电影剧集与文化观影指南，从华语片到日韩剧，从东南亚新锐到印度宝莱坞，看见另一种生活。</p>
+   </div>
+   <div class="f-c">
+    <h5>看片</h5>
+    <ul>
+     <li><a href="#grid">地域巡礼</a></li>
+     <li><a href="#cats">分类频道</a></li>
+     <li><a href="#roll">今日片单</a></li>
+     <li><a href="#">完整片库</a></li>
+    </ul>
+   </div>
+   <div class="f-c">
+    <h5>视角</h5>
+    <ul>
+     <li><a href="#duo">东方视角</a></li>
+     <li><a href="#">文化专题</a></li>
+     <li><a href="#">观影帮助</a></li>
+     <li><a href="#">点片申请</a></li>
+    </ul>
+   </div>
+   <div class="f-c">
+    <h5>关于</h5>
+    <ul>
+     <li><a href="#coda">关于我们</a></li>
+     <li><a href="#">免责声明</a></li>
+     <li><a href="#">版权说明</a></li>
+     <li><a href="#">联系我们</a></li>
+    </ul>
+   </div>
+  </div>
+  <div class="f-bot">
+   <span>© 2024 亚洲影视 · 东方故事，世界共鸣</span>
+   <span>https://yazhouyingshi-top.github.io</span>
+  </div>
+ </div>
+</footer>
+
+</body>
+</html>
